@@ -7,7 +7,7 @@ assert(capoeira._VERSION =='0.1')
 assert(capoeira._COPYRIGHT == "Copyright (C) 2011 Capoeira Project")
 assert(capoeira._DESCRIPTION =='Capoeira is a full-feature graphic application development engine and framework')
 
-do
+do -- simple engine test
 	local engine = capoeira:new()
 
 	assert(engine._NAME == capoeira._NAME)
@@ -15,7 +15,7 @@ do
 	assert(engine._DESCRIPTION == capoeira._DESCRIPTION)
 end
 
-do 
+do -- simple engine test with two engines
 	local engine = capoeira:new()
 	local new_engine = capoeira:new()
 
