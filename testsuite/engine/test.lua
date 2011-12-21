@@ -26,4 +26,21 @@ do -- simple engine test with two engines
 	assert(new_engine ~= engine)
 end
 
+do -- test for engine ID generation
+	local id_1, id_2
+	do 
+		local engine = capoeira:new()
+		id_1 = engine._ID
+		assert(id_1)
+	end
+
+	do
+		local engine = capoeira:new()
+		id_2 = engine._ID	
+		assert(id_2)
+	end
+
+	assert(id_1 ~= id_2)
+end
+
 print'OK'
