@@ -15,4 +15,15 @@ do
 	assert(engine._DESCRIPTION == capoeira._DESCRIPTION)
 end
 
+do 
+	local engine = capoeira:new()
+	local new_engine = capoeira:new()
+
+	assert(new_engine._NAME == engine._NAME)
+	assert(new_engine._VERSION == engine._VERSION)
+	assert(new_engine._DESCRIPTION == engine._DESCRIPTION)
+
+	assert(new_engine ~= engine)
+end
+
 print'OK'
