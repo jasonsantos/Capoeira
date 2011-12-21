@@ -43,4 +43,9 @@ do -- test for engine ID generation
 	assert(id_1 ~= id_2)
 end
 
+do -- test for engine arbitrary ID
+	local engine = capoeira:new'daEngine'
+	assert(engine._ID == 'daEngine')
+end
+
 print'OK'
