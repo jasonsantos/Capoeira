@@ -1,4 +1,4 @@
-package.path = ';;../src/?.lua;../../src/?.lua'
+package.path = ';;./?.lua;./testsuite/?.lua;../testsuite/?.lua;./src/?.lua;../src/?.lua;../../src/?.lua'
 
 local capoeira = require'capoeira'
 
